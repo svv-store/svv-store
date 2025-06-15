@@ -1,0 +1,56 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+nav button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product {
+  margin: 10px 0;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+.product button {
+  padding: 6px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+.hidden {
+  display: none;
+}

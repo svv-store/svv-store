@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SVV Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>SVV Store</h1>
+      <nav>
+        <button onclick="toggleLogin()">Login / Signup</button>
+      </nav>
+    </header>
+
+    <section id="login-section" class="hidden">
+      <h2>Login or Signup</h2>
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+      <button onclick="login()">Enter</button>
+    </section>
+
+    <section id="store">
+      <h2>Products</h2>
+      <div class="products">
+        <div class="product">
+          <p>Wireless Earbuds</p>
+          <button onclick="addToCart('Wireless Earbuds')">Add to Cart</button>
+        </div>
+        <div class="product">
+          <p>Bluetooth Speaker</p>
+          <button onclick="addToCart('Bluetooth Speaker')">Add to Cart</button>
+        </div>
+        <div class="product">
+          <p>Smart Watch</p>
+          <button onclick="addToCart('Smart Watch')">Add to Cart</button>
+        </div>
+        <div class="product">
+          <p>HD Projector</p>
+          <button onclick="addToCart('HD Projector')">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="cart">
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+    </section>
+
+    <footer>
+      <p>Contact us: sreenanthappuss@gmail.com</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
